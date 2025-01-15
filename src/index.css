@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --dark-slate-blue: #264653;
+    --teal-green: #2A9D8F;
+    --golden-yellow: #E9C46A;
+    --pale-orange: #F4A261;
+    --sienna-orange: #772F1A;
+  }

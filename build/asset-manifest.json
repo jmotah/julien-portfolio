@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.73ed7d26.css",
+    "main.js": "/static/js/main.43727deb.js",
+    "static/media/motorcycle_photo.jpeg": "/static/media/motorcycle_photo.a6efff2e5ab016beac4d.jpeg",
+    "static/media/vr_game_analysis_photo.png": "/static/media/vr_game_analysis_photo.8b0ace0c1c4df883671b.png",
+    "static/media/portfolio_photo.png": "/static/media/portfolio_photo.f4ba1ee27197e5799d2d.png",
+    "static/media/dj_photo.png": "/static/media/dj_photo.a1db1759bcfdcc276eee.png",
+    "static/media/threetrios_photo.png": "/static/media/threetrios_photo.08f985674f1c2179673d.png",
+    "static/media/soccer_photo.JPG": "/static/media/soccer_photo.798246443ead4642e24f.JPG",
+    "static/media/swarmscape_photo.jpg": "/static/media/swarmscape_photo.eaa520f64b312aaf5d8b.jpg",
+    "static/media/julien_photo.jpeg": "/static/media/julien_photo.26ceeb6e1c3f49ae176a.jpeg",
+    "index.html": "/index.html",
+    "main.73ed7d26.css.map": "/static/css/main.73ed7d26.css.map",
+    "main.43727deb.js.map": "/static/js/main.43727deb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.73ed7d26.css",
+    "static/js/main.43727deb.js"
+  ]
+}
