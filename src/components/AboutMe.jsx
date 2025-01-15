@@ -46,7 +46,7 @@ const AboutMe = () => {
       {sections.map((section, index) => (
         <div
           key={index}
-          className={`w-full h-[735px] px-4 pt-10 md:pt-20 grid items-center ${
+          className={`w-full min-h-screen px-4 py-10 md:py-20 grid items-center ${
             index % 2 === 0 ? "bg-gray-50 text-black" : "bg-black text-white"
           }`}
         >
@@ -65,7 +65,7 @@ const AboutMe = () => {
                   <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold">
                     {section.title}
                   </h1>
-                  <p className="text-lg sm:text-lg md:text-2xl py-2 text-gray-500">
+                  <p className="text-lg sm:text-lg md:text-2xl py-4 text-gray-500">
                     {section.paragraph}
                   </p>
                 </div>
@@ -77,7 +77,7 @@ const AboutMe = () => {
                   <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold">
                     {section.title}
                   </h1>
-                  <p className="text-lg sm:text-lg md:text-2xl py-2 text-gray-500">
+                  <p className="text-lg sm:text-lg md:text-2xl py-4 text-gray-500">
                     {section.paragraph}
                   </p>
                 </div>
