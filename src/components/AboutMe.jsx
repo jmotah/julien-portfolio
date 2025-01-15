@@ -1,33 +1,36 @@
 import React from "react";
 import { motion } from "framer-motion";
-import DJPhoto from "../assets/dj_photo.png"
-import SoccerPhoto from "../assets/soccer_photo.JPG"
-import MotorcyclePhoto from "../assets/motorcycle_photo.jpeg"
+import DJPhoto from "../assets/dj_photo.png";
+import SoccerPhoto from "../assets/soccer_photo.JPG";
+import MotorcyclePhoto from "../assets/motorcycle_photo.jpeg";
 
 const sections = [
   {
     title: "Motorcycles",
-    paragraph: "I've had a love for bikes since I can remember, but when I was 17 years old I got my official license. " 
-    + "I was able to purchase a Kawasaki Ninja 650 as my first bike and absolutely love it. I've done some work to it including "
-    + "installing an exhaust, dyno tune, and a few small modifications. There's just something about the wind hitting you while riding.",
+    paragraph:
+      "I've had a love for bikes since I can remember, but when I was 17 years old I got my official license. " +
+      "I was able to purchase a Kawasaki Ninja 650 as my first bike and absolutely love it. I've done some work to it including " +
+      "installing an exhaust, dyno tune, and a few small modifications. There's just something about the wind hitting you while riding.",
     image: MotorcyclePhoto,
-    alt: "MotorcyclePhoto"
+    alt: "Motorcycle Photo",
   },
   {
     title: "DJing",
-    paragraph: "My roommate and I started learning how to DJ during our Freshman year at university. It was helpful motivating "
-    + "and bouncing ideas off one another to continue and progress with something we were both in. Present day, together, we "
-    + "have DJed multiple events!",
+    paragraph:
+      "My roommate and I started learning how to DJ during our Freshman year at university. It was helpful motivating " +
+      "and bouncing ideas off one another to continue and progress with something we were both in. Present day, together, we " +
+      "have DJed multiple events!",
     image: DJPhoto,
-    alt: "DJPhoto"
+    alt: "DJ Photo",
   },
   {
     title: "Soccer",
-    paragraph: "Soccer has been a big part of my life since a kid. Growing up, I've played for multiple club teams and am a "
-    + "Bayern Munich and Tottenham Hotspur fan. I still play soccer for the university intramural team and try to play pickup "
-    + "whenever I can!", 
+    paragraph:
+      "Soccer has been a big part of my life since a kid. Growing up, I've played for multiple club teams and am a " +
+      "Bayern Munich and Tottenham Hotspur fan. I still play soccer for the university intramural team and try to play pickup " +
+      "whenever I can!",
     image: SoccerPhoto,
-    alt: "SoccerPhoto"
+    alt: "Soccer Photo",
   },
 ];
 
@@ -43,23 +46,26 @@ const AboutMe = () => {
       {sections.map((section, index) => (
         <div
           key={index}
-          className={`w-full h-[735px] px-4 pt-20 grid items-center ${
+          className={`w-full h-[735px] px-4 pt-10 md:pt-20 grid items-center ${
             index % 2 === 0 ? "bg-gray-50 text-black" : "bg-black text-white"
           }`}
         >
-          <div className="max-w-[1240px] mx-auto grid md:grid-cols-2">
+          <div className="max-w-[1240px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
             {index % 2 === 0 ? (
               <>
                 {/* Image */}
-                <img className="w-96 h-96 mx-auto my-4 rounded-full aspect-square hover:scale-110 transition-all duration-300" 
-                src={section.image} alt={section.alt} />
+                <img
+                  className="w-96 h-96 sm:w-72 sm:h-72 md:w-96 md:h-96 mx-auto my-4 rounded-full aspect-square hover:scale-110 transition-all duration-300"
+                  src={section.image}
+                  alt={section.alt}
+                />
 
                 {/* Main Text Content */}
-                <div className="flex flex-col justify-center">
-                  <h1 className="md:text-5xl sm:text-4xl text-xl font-bold text-right">
+                <div className="flex flex-col justify-center text-center md:text-right">
+                  <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold">
                     {section.title}
                   </h1>
-                  <p className="md:text-2xl sm:text-lg text-lg py-2 text-gray-500">
+                  <p className="text-lg sm:text-xl md:text-2xl py-2 text-gray-500">
                     {section.paragraph}
                   </p>
                 </div>
@@ -67,18 +73,21 @@ const AboutMe = () => {
             ) : (
               <>
                 {/* Main Text Content */}
-                <div className="flex flex-col justify-center">
-                  <h1 className="md:text-5xl sm:text-4xl text-xl font-bold text-left">
+                <div className="flex flex-col justify-center text-center md:text-left">
+                  <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold">
                     {section.title}
                   </h1>
-                  <p className="md:text-2xl sm:text-lg text-lg py-2 text-gray-500">
+                  <p className="text-lg sm:text-xl md:text-2xl py-2 text-gray-500">
                     {section.paragraph}
                   </p>
                 </div>
 
                 {/* Image */}
-                <img className="w-96 h-96 mx-auto my-4 rounded-full aspect-square hover:scale-110 transition-all duration-300" 
-                src={section.image} alt={section.alt} />
+                <img
+                  className="w-96 h-96 sm:w-72 sm:h-72 md:w-96 md:h-96 mx-auto my-4 rounded-full aspect-square hover:scale-110 transition-all duration-300"
+                  src={section.image}
+                  alt={section.alt}
+                />
               </>
             )}
           </div>

@@ -9,22 +9,21 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Footer Content */}
-        <div className="flex flex-col md:flex-row justify-between items-center mt-6 border-t pt-4 border-gray-600">
+        <div className="flex flex-col md:flex-row justify-between items-center mt-6 border-t pt-4 border-gray-600 space-y-4 md:space-y-0">
 
           {/* Left Section: Name */}
-          <div className="mb-4 md:mb-0 flex items-center space-x-2">
+          <div className="flex items-center space-x-2">
             <span className="h-10 w-10 rounded-full bg-teal-400 inline-block"></span>
             <span className="text-lg font-bold">Julien</span>
           </div>
 
           {/* Center Section: Copyright */}
-          <div className="flex space-x-6 mb-4 md:mb-0 text-center text-sm pt-1 text-gray-400">
+          <div className="text-center text-sm pt-1 text-gray-400">
             © 2025 Julien. All rights reserved.
           </div>
 
           {/* Right Section: Social Icons */}
-          <div className="flex space-x-6 mb-4 md:mb-0">
-
+          <div className="flex space-x-4">
             {/* Mail Icon */}
             <a
               href="mailto:jmotaharian1@gmail.com"
@@ -34,7 +33,7 @@ const Footer = () => {
               <img
                 src={MailIcon}
                 alt="Mail"
-                className="w-6 h-6 hover:opacity-50"
+                className="w-8 h-8 hover:opacity-50"
               />
             </a>
 
@@ -47,7 +46,7 @@ const Footer = () => {
               <img
                 src={GithubIcon}
                 alt="GitHub"
-                className="w-6 h-6 hover:opacity-50"
+                className="w-8 h-8 hover:opacity-50"
               />
             </a>
 
@@ -60,7 +59,7 @@ const Footer = () => {
               <img
                 src={LinkedInIcon}
                 alt="LinkedIn"
-                className="w-6 h-6 hover:opacity-50"
+                className="w-8 h-8 hover:opacity-50"
               />
             </a>
           </div>
