@@ -1,5 +1,6 @@
 import { Link, NavLink } from "react-router-dom";
 import JulienPhoto from "../assets/julien_photo.jpeg";
+import Resume from "../assets/resume.png"
 import { useState } from "react";
 
 const Navbar = () => {
@@ -26,7 +27,7 @@ const Navbar = () => {
                 alt="JulienPhoto"
               />
             </Link>
-            <div className="flex flex-col md:flex-row md:items-center">
+            <div className="flex flex-col md:flex-row md:items-center sm:pt-1">
               <Link
                 to="/"
                 className="text-2xl font-bold text-black"
@@ -83,8 +84,9 @@ const Navbar = () => {
             </div>
             <div className="flex items-center space-x-2">
               <a
-                href="/resume.png"
+                href={Resume}
                 className="px-3 py-2 rounded-md text-sm font-bold hover:text-white hover:bg-teal-500 transition-all duration-300"
+                target='_blank' rel='noopener noreferrer'
               >
                 Resume
               </a>
@@ -120,7 +122,7 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden mt-2 space-y-4 bg-gray-50 rounded-lg shadow-lg p-5">
+          <div className="md:hidden mt-2 space-y-4 bg-gray-50 p-5">
             <NavLink
               to="/about-me"
               className={({ isActive }) =>

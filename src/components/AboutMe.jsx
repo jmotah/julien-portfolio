@@ -65,7 +65,7 @@ const AboutMe = () => {
                   <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold">
                     {section.title}
                   </h1>
-                  <p className="text-lg sm:text-xl md:text-2xl py-2 text-gray-500">
+                  <p className="text-lg sm:text-lg md:text-2xl py-2 text-gray-500">
                     {section.paragraph}
                   </p>
                 </div>
@@ -77,7 +77,7 @@ const AboutMe = () => {
                   <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold">
                     {section.title}
                   </h1>
-                  <p className="text-lg sm:text-xl md:text-2xl py-2 text-gray-500">
+                  <p className="text-lg sm:text-lg md:text-2xl py-2 text-gray-500">
                     {section.paragraph}
                   </p>
                 </div>
