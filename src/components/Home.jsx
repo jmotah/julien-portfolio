@@ -6,7 +6,7 @@ import JulienPhoto from '../assets/julien_photo.jpeg'
 const Home = () => {
   return (
     <motion.div
-    className="w-full h-[735px] px-4 pt-20 bg-gray-50"
+    className="w-full min-h-screen px-4 pt-20 bg-gray-50"
 
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
