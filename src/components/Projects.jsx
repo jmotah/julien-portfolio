@@ -13,7 +13,7 @@ const projects = [
       A fully <strong>personalized portfolio</strong> talking more about <strong>me as a person</strong>. Showcases my skills, projects, and passions. Created using <strong>React</strong>, <strong>Node.js</strong>, <strong>Tailwind CSS</strong>, <strong>GSAP</strong>, <strong>Farmer Motion</strong>, <strong>Web3Forms</strong>.
     </>
     ),
-    link: "https://julien-portfolio.vercel.app",
+    link: "https://www.jmotah.me",
     image: PortfolioPhoto,
   },
   {
