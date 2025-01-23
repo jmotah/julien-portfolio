@@ -1,6 +1,6 @@
 {
-  "homepage": "http://jmotah.github.io/",
-  "name": "jmotah.github.io",
+  "homepage": "http:jmotah.me",
+  "name": "julien-portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
