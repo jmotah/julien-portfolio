@@ -60,8 +60,8 @@ const Navbar = () => {
                 strokeWidth={2}
                 d={
                   isMobileMenuOpen
-                    ? "M6 18L18 6M6 6l12 12" // X icon for close
-                    : "M4 6h16M4 12h16M4 18h16" // Hamburger menu icon
+                    ? "M6 18L18 6M6 6l12 12"
+                    : "M4 6h16M4 12h16M4 18h16"
                 }
               />
             </svg>
