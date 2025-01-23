@@ -46,7 +46,7 @@ const projects = [
       A <strong>dynamic</strong>, <strong>strategy-based</strong> card game based off the Red7 board game. Created using <strong>Java</strong>, the game follows the <strong>MVC design pattern</strong> and features a <strong>modular</strong> architecture to allow for <strong>easy customization</strong> of rules/strategies. Includes a <strong>single-player</strong> or the option to play against an <strong>AI Computer player</strong> through a <strong>GUI</strong>.
       </>
     ),
-    link: "https://github.com/jmotahh",
+    link: "https://github.com/jmotah",
     image: ThreeTriosPhoto,
   },
 ];
