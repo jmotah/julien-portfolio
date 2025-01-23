@@ -3,16 +3,18 @@ import { motion } from "framer-motion";
 import DJPhoto from "../assets/dj_photo.png";
 import SoccerPhoto from "../assets/soccer_photo.JPG";
 import MotorcyclePhoto from "../assets/motorcycle_photo.jpeg";
+import RowingPhoto from "../assets/rowing_photo.jpg"
 
 const sections = [
   {
-    title: "Motorcycles",
+    title: "Rowing",
     paragraph:
-      "I've had a love for bikes since I can remember, but when I was 17 years old I got my official license. " +
-      "I was able to purchase a Kawasaki Ninja 650 as my first bike and absolutely love it. I've done some work to it including " +
-      "installing an exhaust, dyno tune, and a few small modifications. There's just something about the wind hitting you while riding.",
-    image: MotorcyclePhoto,
-    alt: "Motorcycle Photo",
+      "I picked up rowing crew early in high school. I was trained as a starboard rower rowing as seven seat in an eight " + 
+      "eight man boat. With more experience, my team and I were split into two four man boats where I then rowed three seat. " +
+      "We travelled all around the north east competing in various competitions held in New Jersey, Connecticuit, Pennsylvania, and " +
+      "even Boston!",
+    image: RowingPhoto,
+    alt: "Rowing Photo"
   },
   {
     title: "DJing",
@@ -31,6 +33,15 @@ const sections = [
       "whenever I can!",
     image: SoccerPhoto,
     alt: "Soccer Photo",
+  },
+  {
+    title: "Motorcycles",
+    paragraph:
+      "I've had a love for bikes since I can remember, but when I was 17 years old I got my official license. " +
+      "I was able to purchase a Kawasaki Ninja 650 as my first bike and absolutely love it. I've done some work to it including " +
+      "installing an exhaust, dyno tune, and a few small modifications. There's just something about the wind on your face while riding.",
+    image: MotorcyclePhoto,
+    alt: "Motorcycle Photo",
   },
 ];
 
