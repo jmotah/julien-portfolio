@@ -109,7 +109,7 @@ const Contact = () => {
         </div>
 
         {/* Social Links */}
-        <div className="flex flex-col justify-center space-y-6">
+        <div className="flex flex-col justify-center space-y-12">
           {socials.map((social) => (
             <a
               href={social.href}
