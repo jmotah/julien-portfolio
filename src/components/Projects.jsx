@@ -13,7 +13,7 @@ const projects = [
       A fully <strong>personalized portfolio</strong> talking more about <strong>me as a person</strong>. Showcases my skills, projects, and passions. Created using <strong>React</strong>, <strong>Node.js</strong>, <strong>Tailwind CSS</strong>, <strong>GSAP</strong>, <strong>Farmer Motion</strong>, <strong>Web3Forms</strong>.
     </>
     ),
-    link: "https://www.jmotah.me",
+    link: "https://github.com/jmotah/julien-portfolio",
     image: PortfolioPhoto,
   },
   {
@@ -35,7 +35,7 @@ const projects = [
       <strong>Web-scrapped</strong> Steam's top virtual reality (VR) games to gain insight on what <strong>drives popularity</strong> among consumers. Utilized machine learning models including the <strong>Multiple Regression</strong> and <strong>Random Forest Regression</strong> models to identify the <strong>strongest predictors of game popularity</strong>.
       </>
     ),
-    link: "https://github.com/jmotah",
+    link: "https://github.com/jmotah/VR-Game-Popularity-Analysis",
     image: VRGameAnalysisPhoto,
   },
   {
@@ -46,7 +46,7 @@ const projects = [
       A <strong>dynamic</strong>, <strong>strategy-based</strong> card game based off the Red7 board game. Created using <strong>Java</strong>, the game follows the <strong>MVC design pattern</strong> and features a <strong>modular</strong> architecture to allow for <strong>easy customization</strong> of rules/strategies. Includes a <strong>single-player</strong> or the option to play against an <strong>AI Computer player</strong> through a <strong>GUI</strong>.
       </>
     ),
-    link: "https://github.com/jmotah",
+    link: "https://github.com/jmotah/Three-Trios",
     image: ThreeTriosPhoto,
   },
 ];
