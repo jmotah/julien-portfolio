@@ -11,8 +11,8 @@ const sections = [
     paragraph:
       "I picked up rowing crew early in high school. I was trained as a starboard rower rowing as seven seat in an eight " + 
       "eight man boat. With more experience, my team and I were split into two four man boats where I then rowed three seat. " +
-      "We travelled all around the north east competing in various competitions held in New Jersey, Connecticuit, Pennsylvania, and " +
-      "even Boston!",
+      "By my senior year, I was voted as team captain! We travelled all around the north east competing in various competitions " +
+      "held in New Jersey, Connecticuit, Pennsylvania, and even Boston!",
     image: RowingPhoto,
     alt: "Rowing Photo"
   },
