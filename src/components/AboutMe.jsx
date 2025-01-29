@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import DJPhoto from "../assets/dj_photo.png";
+import DJPhoto from "../assets/dj_photo.jpg";
 import SoccerPhoto from "../assets/soccer_photo.JPG";
 import MotorcyclePhoto from "../assets/motorcycle_photo.jpeg";
 import RowingPhoto from "../assets/rowing_photo.jpg"
