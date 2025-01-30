@@ -11,6 +11,7 @@ export default function App() {
       <Navbar />
         <AnimatedRoutes />
       <Footer />
+      <Analytics />
     </Router>
   );
 }
