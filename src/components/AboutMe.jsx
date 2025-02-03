@@ -4,6 +4,7 @@ import DJPhoto from "../assets/dj_photo.jpg";
 import SoccerPhoto from "../assets/soccer_photo.JPG";
 import MotorcyclePhoto from "../assets/motorcycle_photo.jpeg";
 import RowingPhoto from "../assets/rowing_photo.jpg"
+import RockClimbingPhoto from "../assets/rock_climbing_photo.png"
 
 const sections = [
   {
@@ -43,6 +44,14 @@ const sections = [
     image: MotorcyclePhoto,
     alt: "Motorcycle Photo",
   },
+  {
+    title: "Rock Climbing",
+    paragraph: "Rock climbing has been a big part of my life since 2019. It's a sport that really lets me be in tune with " +
+    "myself, teaching mental trust and adaptability for each climb. Beyond the sport, the community is one that is incredibly " +
+    "passionate, kind, and social. Presently, I'm top-rope certified and lead certified.",
+    image: RockClimbingPhoto,
+    alt: "Rock Climbing Photo"
+  }
 ];
 
 const AboutMe = () => {
