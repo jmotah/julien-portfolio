@@ -1,7 +1,7 @@
 import React from "react";
 import { ReactTyped } from "react-typed";
 import { motion } from 'framer-motion'
-import JulienPhoto from '../assets/julien_photo.jpeg'
+import JulienPhoto from '../assets/julien_photo.jpg'
 
 const Home = () => {
   return (

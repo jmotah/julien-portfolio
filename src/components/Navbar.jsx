@@ -1,5 +1,5 @@
 import { Link, NavLink } from "react-router-dom";
-import JulienPhoto from "../assets/julien_photo.jpeg";
+import JulienPhoto from "../assets/julien_photo.jpg";
 import Resume from "../assets/resume.jpg"
 import { useState } from "react";
 
