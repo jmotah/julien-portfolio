@@ -39,7 +39,7 @@ const projects = [
     title: "MarsX GenAI Potential Baggage Misconnect Detector",
     description: (
     <>
-      Developed an <strong>LLM-powered detector</strong> that fuses <strong>live bag scans</strong>, <strong>flight schedules</strong>, and <strong>weather intelligence</strong> to produce <strong>plain-language risk</strong>. Increased reliability via <strong>state handling</strong>, <strong>smart caching</strong>, and <strong>time-zone normalization</strong>, enabling earlier, actionably clear “hold vs. reroute” decisions.
+      Developed an <strong>LLM-powered detector</strong> that combines <strong>live bag scans</strong>, <strong>flight schedules</strong>, and <strong>weather intelligence</strong> to generate <strong>plain-language risk</strong> alerts. Improved reliability with <strong>state handling</strong>, <strong>smart caching</strong>, and <strong>time zone normalization</strong>, enabling earlier, clearer decisions to <strong>hold</strong> or <strong>reroute</strong> bags.
     </>
     ),
     link: "Internal company information",
