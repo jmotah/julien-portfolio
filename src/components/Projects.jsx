@@ -4,8 +4,85 @@ import PortfolioPhoto from "../assets/portfolio_photo.png"
 import SwarmScapePhoto from "../assets/swarmscape_photo.jpg"
 import VRGameAnalysisPhoto from "../assets/vr_game_analysis_photo.png"
 import ThreeTriosPhoto from "../assets/threetrios_photo.png"
+import UDHCaseStudyPhoto from "../assets/udh_case_study_photo.png"
+import SQLRoadmapPhoto from "../assets/sql_roadmap_photo.png"
+import MisconnectDetectorPhoto from "../assets/misconnect_detector_photo.png"
+import FakeNewsDetectorPhoto from "../assets/fake_news_detector_photo.png"
+import MotionMaxPhoto from "../assets/motion_max_photo.png"
 
 const projects = [
+  {
+    title: "United Data Hub (UDH) Case Study",
+    description: (
+    <>
+      Led <strong>6+ feedback sessions</strong> with <strong>16 analysts</strong> to surface gaps in
+      <strong> SQL training</strong>, <strong>data refresh visibility</strong>, and
+      <strong> documentation ownership</strong> across UDH. Delivered recommendations (e.g.,
+      <strong> sample data previews</strong>, <strong>activity dashboards</strong>) and a standardized
+      <strong> UDH orientation</strong> to streamline onboarding and reduce support load.
+    </>
+    ),
+    link: "Internal company information",
+    image: UDHCaseStudyPhoto,
+  },
+  {
+    title: "Redshift SQL Roadmap Website (Onboarding Hub)",
+    description: (
+    <>
+      Built a <strong>self-service learning hub</strong> with curated examples, videos, and challenge
+      tasks to accelerate analyst onboarding to <strong>Redshift</strong> and <strong>DBeaver</strong>.
+      Centralized <strong>SQL conventions</strong> and common query patterns and introduced
+      <strong> internal LLM workflows</strong> for querying and documentation.
+    </>
+    ),
+    link: "Internal company information",
+    image: SQLRoadmapPhoto,
+  },
+  {
+    title: "MarsX GenAI Potential Baggage Misconnect Detector",
+    description: (
+    <>
+      Developed an <strong>LLM-powered detector</strong> fusing <strong>live bag scans</strong>,
+      <strong> flight schedules</strong>, and <strong>weather intelligence</strong> to produce
+      <strong> plain-language misconnect risk</strong> for agents and passengers. Increased reliability
+      via <strong>state handling</strong>, <strong>smart caching</strong>, and
+      <strong> time-zone normalization</strong>, enabling earlier, actionable alerts.
+    </>
+    ),
+    link: "Internal company information",
+    image: MisconnectDetectorPhoto,
+  },
+  {
+    title: "Fake News & Propaganda Detector (NLP)",
+    description: (
+    <>
+      Trained and compared <strong>LogReg</strong>, <strong>LSTM</strong>, <strong>RNN</strong>, and
+      <strong> BERT</strong> on normalized text from <strong>FakeNewsNet</strong>, <strong>LIAR</strong>,
+      and a misinformation dataset (thousands of articles/claims). Achieved
+      <strong> ~93% accuracy/F1 with fine-tuned BERT</strong>; shipped a
+      <strong> quick-start inference interface</strong> for real-time sentence classification using
+      <strong> PyTorch</strong> and <strong>HuggingFace</strong>.
+    </>
+    ),
+    link: "https://github.com/jmotah/fake-news-and-propaganda-detector",
+    image: FakeNewsDetectorPhoto,
+  },
+  {
+    title: "motionMAX - Fitness & Welness Platform",
+    description: (
+    <>
+      Full-stack app using <strong>Streamlit</strong> (frontend), <strong>Flask REST API</strong> (backend),
+      and <strong>MySQL</strong> (DB). Features <strong>RBAC</strong> (sales, trainer, client, admin);
+      trainer-programmed <strong>workouts</strong> with tracking; <strong>food/macros</strong> logging and recipes;
+      trainer–client <strong>messaging</strong>; admin/sales <strong>analytics</strong> (CAC, CLV, revenue, monthly
+      subscribers); surveys for <strong>demographics/feedback</strong>; product catalog with price updates & out-of-stock;
+      <strong>support tickets</strong> lifecycle; maintenance-mode toggle; and full <strong>profile CRUD</strong>. One-command
+      <strong> Docker Compose</strong> setup.
+    </>
+    ),
+    link: "https://github.com/Kaz3015/CS-3200-MotionMax",
+    image: MotionMaxPhoto,
+  },
   {
     title: "Personalized Portfolio Website",
     description: (
