@@ -29,10 +29,7 @@ const projects = [
     title: "Redshift SQL Roadmap Website (Onboarding Hub)",
     description: (
     <>
-      Built a <strong>self-service learning hub</strong> with curated examples, videos, and challenge
-      tasks to accelerate analyst onboarding to <strong>Redshift</strong> and <strong>DBeaver</strong>.
-      Centralized <strong>SQL conventions</strong> and common query patterns and introduced
-      <strong> internal LLM workflows</strong> for querying and documentation.
+      Built a <strong>self-service learning hub</strong> with curated examples, short videos, and <strong>company-curated challenge problems</strong> that get new <strong>analysts</strong> hands-on with <strong>company software</strong> and <strong>internal resources</strong> (Redshift, DBeaver, internal LLM tools). Designed for analysts—including those new to <strong>SQL</strong> or <strong>Redshift</strong>—the roadmap scaffolds fundamentals to production patterns, embeds best practices, and <strong>integrates new employees into company resources</strong>, workflows, and support channels so they ramp faster and feel <strong>more confident</strong>.
     </>
     ),
     link: "Internal company information",
@@ -42,11 +39,7 @@ const projects = [
     title: "MarsX GenAI Potential Baggage Misconnect Detector",
     description: (
     <>
-      Developed an <strong>LLM-powered detector</strong> fusing <strong>live bag scans</strong>,
-      <strong> flight schedules</strong>, and <strong>weather intelligence</strong> to produce
-      <strong> plain-language misconnect risk</strong> for agents and passengers. Increased reliability
-      via <strong>state handling</strong>, <strong>smart caching</strong>, and
-      <strong> time-zone normalization</strong>, enabling earlier, actionable alerts.
+      Developed an <strong>LLM-powered detector</strong> that fuses <strong>live bag scans</strong>, <strong>flight schedules</strong>, and <strong>weather intelligence</strong> to produce <strong>plain-language risk</strong>. Increased reliability via <strong>state handling</strong>, <strong>smart caching</strong>, and <strong>time-zone normalization</strong>, enabling earlier, actionably clear “hold vs. reroute” decisions.
     </>
     ),
     link: "Internal company information",
@@ -56,12 +49,7 @@ const projects = [
     title: "Fake News & Propaganda Detector (NLP)",
     description: (
     <>
-      Trained and compared <strong>LogReg</strong>, <strong>LSTM</strong>, <strong>RNN</strong>, and
-      <strong> BERT</strong> on normalized text from <strong>FakeNewsNet</strong>, <strong>LIAR</strong>,
-      and a misinformation dataset (thousands of articles/claims). Achieved
-      <strong> ~93% accuracy/F1 with fine-tuned BERT</strong>; shipped a
-      <strong> quick-start inference interface</strong> for real-time sentence classification using
-      <strong> PyTorch</strong> and <strong>HuggingFace</strong>.
+      Trained and compared <strong>LogReg</strong>, <strong>LSTM</strong>, <strong>RNN</strong>, and <strong>BERT</strong> on normalized text from <strong>FakeNewsNet</strong>, <strong>LIAR</strong>, and a misinformation dataset. Achieved <strong>~93% accuracy/F1</strong> with fine-tuned BERT and <strong>~88% accuracy</strong> with LSTM; shipped a quick-start inference interface using <strong>PyTorch</strong> and <strong>HuggingFace</strong>.
     </>
     ),
     link: "https://github.com/jmotah/fake-news-and-propaganda-detector",
@@ -71,13 +59,7 @@ const projects = [
     title: "motionMAX - Fitness & Welness Platform",
     description: (
     <>
-      Full-stack app using <strong>Streamlit</strong> (frontend), <strong>Flask REST API</strong> (backend),
-      and <strong>MySQL</strong> (DB). Features <strong>RBAC</strong> (sales, trainer, client, admin);
-      trainer-programmed <strong>workouts</strong> with tracking; <strong>food/macros</strong> logging and recipes;
-      trainer–client <strong>messaging</strong>; admin/sales <strong>analytics</strong> (CAC, CLV, revenue, monthly
-      subscribers); surveys for <strong>demographics/feedback</strong>; product catalog with price updates & out-of-stock;
-      <strong>support tickets</strong> lifecycle; maintenance-mode toggle; and full <strong>profile CRUD</strong>. One-command
-      <strong> Docker Compose</strong> setup.
+      Built a full-stack fitness app with distinct roles for <strong>admins</strong>, <strong>trainers</strong>, and <strong>clients</strong>. Trainers can design <strong>custom workouts</strong> and track progress, while clients log <strong>food and macros</strong> and receive <strong>messaging support</strong> from trainers. Admins oversee <strong>subscriptions, revenue trends, and user activity</strong>. Implemented features for support ticket management, product catalog updates, and full profile customization. Deployed with a <strong>Flask + MySQL</strong> backend, <strong>Streamlit</strong> UI, and one-command <strong>Docker Compose</strong> setup.
     </>
     ),
     link: "https://github.com/Kaz3015/CS-3200-MotionMax",
