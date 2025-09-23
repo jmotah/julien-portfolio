@@ -1,6 +1,6 @@
 import { Link, NavLink } from "react-router-dom";
 import JulienPhoto from "../assets/julien_photo.jpg";
-import Resume from "../assets/resume.jpg"
+import Resume from "../assets/julienmotaharian.png"
 import { useState } from "react";
 
 const Navbar = () => {
@@ -135,7 +135,9 @@ const Navbar = () => {
               About Me
             </NavLink>
             <a
-              href="/resume.png"
+              href={Resume}
+              target="_blank"
+              rel="noopener noreferrer"
               className="block px-3 py-2 text-sm font-bold text-gray-800 rounded-md hover:bg-teal-500 hover:text-white transition-all duration-300"
               onClick={closeMobileMenu}
             >
