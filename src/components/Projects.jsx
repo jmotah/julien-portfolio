@@ -1,5 +1,5 @@
-import React from "react";
-import { motion } from "framer-motion";
+import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import PortfolioPhoto from "../assets/portfolio_photo.png"
 import SwarmScapePhoto from "../assets/swarmscape_photo.jpg"
 import VRGameAnalysisPhoto from "../assets/vr_game_analysis_photo.png"
@@ -15,7 +15,7 @@ const projects = [
     title: "United Data Hub (UDH) Case Study",
     description: (
     <>
-      Led <strong>6+ feedback sessions</strong> with <strong>16 analysts</strong> to surface gaps in
+      Led <strong>6+ feedback sessions</strong> with <strong>16 analysts</strong> at United Airlines to surface gaps in
       <strong> SQL training</strong>, <strong>data refresh visibility</strong>, and
       <strong> documentation ownership</strong> across UDH. Delivered recommendations (e.g.,
       <strong> sample data previews</strong>, <strong>activity dashboards</strong>) and a standardized
@@ -29,7 +29,7 @@ const projects = [
     title: "Redshift SQL Roadmap Website (Onboarding Hub)",
     description: (
     <>
-      Built a <strong>self-service learning hub</strong> with curated examples, short videos, and <strong>company-curated challenge problems</strong> that get new <strong>analysts</strong> hands-on with <strong>company software</strong> and <strong>internal resources</strong> (Redshift, DBeaver, internal LLM tools). Designed for analysts—including those new to <strong>SQL</strong> or <strong>Redshift</strong>—the roadmap scaffolds fundamentals to production patterns, embeds best practices, and <strong>integrates new employees into company resources</strong>, workflows, and support channels so they ramp faster and feel <strong>more confident</strong>.
+      Built a <strong>self-service learning hub</strong> for United Airlines with curated examples, short videos, and <strong>company-curated challenge problems</strong> that get new <strong>analysts</strong> hands-on with <strong>company software</strong> and <strong>internal resources</strong> (Redshift, DBeaver, internal LLM tools). Designed for analysts—including those new to <strong>SQL</strong> or <strong>Redshift</strong>—the roadmap scaffolds fundamentals to production patterns, embeds best practices, and <strong>integrates new employees into company resources</strong>, workflows, and support channels so they ramp faster and feel <strong>more confident</strong>.
     </>
     ),
     link: "Internal company information",
@@ -39,7 +39,7 @@ const projects = [
     title: "MarsX GenAI Potential Baggage Misconnect Detector",
     description: (
     <>
-      Developed an <strong>LLM-powered detector</strong> that combines <strong>live bag scans</strong>, <strong>flight schedules</strong>, and <strong>weather intelligence</strong> to generate <strong>plain-language risk</strong> alerts. Improved reliability with <strong>state handling</strong>, <strong>smart caching</strong>, and <strong>time zone normalization</strong>, enabling earlier, clearer decisions to <strong>hold</strong> or <strong>reroute</strong> bags.
+      Developed an <strong>LLM-powered detector</strong> for United Airlines that combines <strong>live bag scans</strong>, <strong>flight schedules</strong>, and <strong>weather intelligence</strong> to generate <strong>plain-language risk</strong> alerts. Improved reliability with <strong>state handling</strong>, <strong>smart caching</strong>, and <strong>time zone normalization</strong>, enabling earlier, clearer decisions to <strong>hold</strong> or <strong>reroute</strong> bags.
     </>
     ),
     link: "Internal company information",
@@ -111,6 +111,20 @@ const projects = [
 ];
 
 const Projects = () => {
+  const [popupText, setPopupText] = useState(null);
+
+  const handleClick = (e, link) => {
+    // Check if link starts with http:// or https://
+    if (!link.startsWith('http://') && !link.startsWith('https://')) {
+      e.preventDefault();
+      setPopupText(link);
+    }
+  };
+
+  const closePopup = () => {
+    setPopupText(null);
+  };
+
   return (
     <motion.div
       className="min-h-screen bg-gray-50 py-10"
@@ -121,32 +135,65 @@ const Projects = () => {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((project, index) => (
-
-            <a 
+          <a 
             href={project.link} 
             target="_blank" 
             rel="noopener noreferrer"
             key={index}
-            className="relative group bg-white shadow-md rounded-lg overflow-hidden hover:shadow-2xl hover:shadow-teal-200 transform hover:scale-105 transition-all duration-300">
-                {/* Image */}
-                <div className="overflow-hidden">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-48 object-cover"
-                  />
-                </div>
+            onClick={(e) => handleClick(e, project.link)}
+            className="relative group bg-white shadow-md rounded-lg overflow-hidden hover:shadow-2xl hover:shadow-teal-200 transform hover:scale-105 transition-all duration-300"
+          >
+            {/* Image */}
+            <div className="overflow-hidden">
+              <img
+                src={project.image}
+                alt={project.title}
+                className="w-full h-48 object-cover"
+              />
+            </div>
 
-                {/* Content */}
-                <div className="p-4">
-                  <h2 className="text-xl font-bold text-gray-800">
-                    {project.title}
-                  </h2>
-                  <p className="text-gray-600 mt-2">{project.description}</p>
-                </div>
-            </a>
+            {/* Content */}
+            <div className="p-4">
+              <h2 className="text-xl font-bold text-gray-800">
+                {project.title}
+              </h2>
+              <p className="text-gray-600 mt-2">{project.description}</p>
+            </div>
+          </a>
         ))}
       </div>
+
+      {/* Popup Modal */}
+      <AnimatePresence>
+        {popupText && (
+          <motion.div
+            className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={closePopup}
+          >
+            <motion.div
+              className="bg-white rounded-lg shadow-xl p-6 max-w-md w-full"
+              initial={{ scale: 0.8, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.8, opacity: 0 }}
+              onClick={(e) => e.stopPropagation()}
+            >
+              <h3 className="text-xl font-bold text-gray-800 mb-4">
+                Project Information
+              </h3>
+              <p className="text-gray-700 mb-6">{popupText}</p>
+              <button
+                onClick={closePopup}
+                className="w-full bg-teal-500 hover:bg-teal-600 text-white font-semibold py-2 px-4 rounded transition-colors duration-200"
+              >
+                Close
+              </button>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </motion.div>
   );
 };
