@@ -26,8 +26,11 @@ const Home = () => {
             loop
           />
           <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold py-2 text-center text-gray-500">
-            Computer Science Student at Northeastern University
+            CS & AI @ Northeastern University
           </h1>
+          <h3 className="md:text-3xl sm:text-2xl text-xl font-bold text-center text-gray-500">
+            Minor in Mathematics
+          </h3>
         </div>
 
         {/* Image */}
