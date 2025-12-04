@@ -9,6 +9,7 @@ import SQLRoadmapPhoto from "../assets/sql_roadmap_photo.png"
 import MisconnectDetectorPhoto from "../assets/misconnect_detector_photo.png"
 import FakeNewsDetectorPhoto from "../assets/fake_news_detector_photo.png"
 import MotionMaxPhoto from "../assets/motion_max_photo.png"
+import InterviewCoachPhoto from "../assets/interview_coach_photo.png"
 
 const projects = [
   {
@@ -54,6 +55,16 @@ const projects = [
     ),
     link: "https://github.com/jmotah/fake-news-and-propaganda-detector",
     image: FakeNewsDetectorPhoto,
+  },
+  {
+    title: "AI Interview Coach",
+    description: (
+    <>
+      Built an <strong>AI</strong>-powered interview coach that uses webcam and mic input to give real-time feedback on delivery. Trained a custom <strong>CNN</strong> in <strong>PyTorch</strong> for facial emotion / nervousness detection, combined with eye-contact tracking via <strong>OpenCV</strong> and a speech-to-text pipeline for WPM, filler rate, and silence. Modeled coaching decisions as an <strong>RL</strong> tabular <strong>Q-learning</strong> problem (interrupt vs.\ stay quiet) with simple feature thresholds and cooldowns, and deployed via a <strong>Flask</strong> API and <strong>React</strong> frontend showing live overlays and post-interview feedback.
+    </>
+    ),
+    link: "https://github.com/annahiggins1/interview-coach",
+    image: InterviewCoachPhoto,
   },
   {
     title: "motionMAX - Fitness & Welness Platform",
