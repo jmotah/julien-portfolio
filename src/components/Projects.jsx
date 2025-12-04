@@ -47,16 +47,6 @@ const projects = [
     image: MisconnectDetectorPhoto,
   },
   {
-    title: "Fake News & Propaganda Detector (NLP)",
-    description: (
-    <>
-      Trained and compared <strong>LogReg</strong>, <strong>LSTM</strong>, <strong>RNN</strong>, and <strong>BERT</strong> on normalized text from <strong>FakeNewsNet</strong>, <strong>LIAR</strong>, and a misinformation dataset. Achieved <strong>~93% accuracy/F1</strong> with fine-tuned BERT and <strong>~88% accuracy</strong> with LSTM; shipped a quick-start inference interface using <strong>PyTorch</strong> and <strong>HuggingFace</strong>.
-    </>
-    ),
-    link: "https://github.com/jmotah/fake-news-and-propaganda-detector",
-    image: FakeNewsDetectorPhoto,
-  },
-  {
     title: "AI Interview Coach",
     description: (
     <>
@@ -65,6 +55,16 @@ const projects = [
     ),
     link: "https://github.com/annahiggins1/interview-coach",
     image: InterviewCoachPhoto,
+  },
+  {
+    title: "Fake News & Propaganda Detector (NLP)",
+    description: (
+    <>
+      Trained and compared <strong>LogReg</strong>, <strong>LSTM</strong>, <strong>RNN</strong>, and <strong>BERT</strong> on normalized text from <strong>FakeNewsNet</strong>, <strong>LIAR</strong>, and a misinformation dataset. Achieved <strong>~93% accuracy/F1</strong> with fine-tuned BERT and <strong>~88% accuracy</strong> with LSTM; shipped a quick-start inference interface using <strong>PyTorch</strong> and <strong>HuggingFace</strong>.
+    </>
+    ),
+    link: "https://github.com/jmotah/fake-news-and-propaganda-detector",
+    image: FakeNewsDetectorPhoto,
   },
   {
     title: "motionMAX - Fitness & Welness Platform",
