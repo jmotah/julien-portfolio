@@ -10,8 +10,29 @@ import MisconnectDetectorPhoto from "../assets/misconnect_detector_photo.png"
 import FakeNewsDetectorPhoto from "../assets/fake_news_detector_photo.png"
 import MotionMaxPhoto from "../assets/motion_max_photo.png"
 import InterviewCoachPhoto from "../assets/interview_coach_photo.png"
+import GambitPhoto from "../assets/gambit_photo.png"
 
 const projects = [
+    {
+    title: "Gambit - Social Multiplayer Gaming Platform",
+    description: (
+    <>
+      Built <strong>Gambit</strong>, an enhanced version of <strong>GameNite</strong>, as a full-stack
+      <strong> multiplayer social gaming platform</strong> using <strong>React</strong>,
+      <strong> TypeScript</strong>, <strong> Node.js</strong>, <strong> Express</strong>,
+      <strong> MongoDB</strong>, and <strong> Socket.IO</strong>. Implemented
+      <strong> public/private groups</strong>, <strong> group chat</strong>,
+      <strong> group game sharing</strong>, <strong> followers/friends</strong>,
+      <strong> achievements</strong>, <strong> per-game and per-group leaderboards</strong>,
+      <strong> Google SSO</strong>, and a fully interactive <strong>Battleship</strong> game with
+      <strong> player-vs-player</strong>, <strong> bot support</strong>, turn timers, and
+      <strong> team-vs-team challenge functionality</strong>. Helped design and debug core gameplay,
+      real-time updates, and challenge workflows across both local and deployed environments.
+    </>
+    ),
+    link: "https://github.com/neu-cs4530/spring26-project-group-213",
+    image: GambitPhoto,
+  },
   {
     title: "United Data Hub (UDH) Case Study",
     description: (
@@ -159,7 +180,7 @@ const Projects = () => {
               <img
                 src={project.image}
                 alt={project.title}
-                className="w-full h-48 object-cover"
+                className="w-full h-48 object-contain"
               />
             </div>
 
