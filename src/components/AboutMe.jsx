@@ -75,7 +75,7 @@ const AboutMe = () => {
               <>
                 {/* Image */}
                 <img
-                  className="w-96 h-96 sm:w-72 sm:h-72 md:w-96 md:h-96 mx-auto my-4 rounded-full aspect-square hover:scale-110 transition-all duration-300"
+                  className="w-96 h-96 sm:w-72 sm:h-72 md:w-96 md:h-96 mx-auto my-4 rounded-full aspect-square object-cover hover:scale-110 transition-all duration-300"
                   src={section.image}
                   alt={section.alt}
                 />
@@ -104,7 +104,7 @@ const AboutMe = () => {
 
                 {/* Image */}
                 <img
-                  className="w-96 h-96 sm:w-72 sm:h-72 md:w-96 md:h-96 mx-auto my-4 rounded-full aspect-square hover:scale-110 transition-all duration-300"
+                  className="w-96 h-96 sm:w-72 sm:h-72 md:w-96 md:h-96 mx-auto my-4 rounded-full aspect-square object-cover hover:scale-110 transition-all duration-300"
                   src={section.image}
                   alt={section.alt}
                 />
