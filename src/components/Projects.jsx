@@ -31,6 +31,7 @@ const projects = [
     </>
     ),
     link: "https://github.com/neu-cs4530/spring26-project-group-213",
+    demo: "https://gambit.jmotah.me",
     image: GambitPhoto,
   },
   {
