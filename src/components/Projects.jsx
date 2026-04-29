@@ -74,7 +74,8 @@ const projects = [
       Built an <strong>AI</strong>-powered interview coach that uses webcam and mic input to give real-time feedback on delivery. Trained a custom <strong>CNN</strong> in <strong>PyTorch</strong> for facial emotion / nervousness detection, combined with eye-contact tracking via <strong>OpenCV</strong> and a speech-to-text pipeline for WPM, filler rate, and silence. Modeled coaching decisions as an <strong>RL</strong> tabular <strong>Q-learning</strong> problem (interrupt vs.\ stay quiet) with simple feature thresholds and cooldowns, and deployed via a <strong>Flask</strong> API and <strong>React</strong> frontend showing live overlays and post-interview feedback.
     </>
     ),
-    link: "https://github.com/annahiggins1/interview-coach",
+    link: "https://github.com/jmotah/interview-coach-vercel",
+    demo: "https://interview-coach.jmotah.me",
     image: InterviewCoachPhoto,
   },
   {
@@ -145,10 +146,10 @@ const projects = [
 const Projects = () => {
   const [popupText, setPopupText] = useState(null);
 
-  const handleClick = (e, link) => {
-    // Check if link starts with http:// or https://
-    if (!link.startsWith('http://') && !link.startsWith('https://')) {
-      e.preventDefault();
+  const handleCardClick = (link) => {
+    if (link.startsWith('http://') || link.startsWith('https://')) {
+      window.open(link, '_blank', 'noopener,noreferrer');
+    } else {
       setPopupText(link);
     }
   };
@@ -167,13 +168,10 @@ const Projects = () => {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((project, index) => (
-          <a 
-            href={project.link} 
-            target="_blank" 
-            rel="noopener noreferrer"
+          <div
             key={index}
-            onClick={(e) => handleClick(e, project.link)}
-            className="relative group bg-white shadow-md rounded-lg overflow-hidden hover:shadow-2xl hover:shadow-teal-200 transform hover:scale-105 transition-all duration-300"
+            onClick={() => handleCardClick(project.link)}
+            className="relative group bg-white shadow-md rounded-lg overflow-hidden hover:shadow-2xl hover:shadow-teal-200 transform hover:scale-105 transition-all duration-300 flex flex-col cursor-pointer"
           >
             {/* Image */}
             <div className="overflow-hidden">
@@ -185,13 +183,28 @@ const Projects = () => {
             </div>
 
             {/* Content */}
-            <div className="p-4">
+            <div className="p-4 flex-1">
               <h2 className="text-xl font-bold text-gray-800">
                 {project.title}
               </h2>
               <p className="text-gray-600 mt-2">{project.description}</p>
             </div>
-          </a>
+
+            {/* Footer */}
+            {project.demo && (
+              <div className="px-4 pb-4">
+                <a
+                  href={project.demo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={(e) => e.stopPropagation()}
+                  className="inline-block bg-teal-500 hover:bg-teal-600 text-white font-semibold py-1.5 px-4 rounded text-sm transition-colors duration-200"
+                >
+                  Live Demo
+                </a>
+              </div>
+            )}
+          </div>
         ))}
       </div>
 
